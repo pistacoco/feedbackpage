@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Pistacoco</title>
+    <style>
+        body {
+            background-color: #e8e4d9;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .form-group {
+            margin: 15px 0;
+            text-align: left;
+        }
+        label {
+            font-size: 16px;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #917236; /* Match your brand color if desired */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #70541b;
+        }
+    </style>
+</head>
+<link rel="icon" href="https://cdn.shopify.com/s/files/1/0888/1314/2355/files/152x152.png?v=1721679231" type="image/png">
+<body>
+    <div class="container">
+        <a href="https://www.pistacoco.com" target="_blank">
+	<img src="https://cdn.shopify.com/s/files/1/0888/1314/2355/files/Text_logo_with_icon_brown_ef7a0eee-84ac-4473-8067-de5001a4d1d0.png?v=1731536825" alt="Pistacoco Logo" class="logo">
+        </a>
+        <h1>We'd Love To Hear Your Thoughts!</h1>
+
+        <form action="https://formspree.io/f/xqakbgok" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="order-experience">How was your ordering experience?</label>
+                <textarea id="order-experience" name="order_experience" placeholder="Describe your experience using our website"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="brigadeiro-feedback">How did you enjoy our brigadeiros?</label>
+                <textarea id="brigadeiro-feedback" name="brigadeiro_feedback" placeholder="Share your thoughts on the taste, texture, etc."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rate your overall experience</label>
+                <select id="rating" name="rating">
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Not so great :(</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>
